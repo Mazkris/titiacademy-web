@@ -34,3 +34,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Keamanan (22 Sep 2026)
+- Rahasia webhook diputar; nilai default keras dihapus dari kode — kini wajib berasal dari environment.
+- Listener hanya memicu deploy untuk event `push` bertanda tangan sah, dan setiap permintaan dicatat ke log.
+- Histori repo ditulis ulang dengan `git filter-repo` untuk membuang nilai default lama dari seluruh commit.
