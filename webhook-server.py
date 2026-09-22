@@ -14,6 +14,8 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 
 PROJECT_DIR = "/root/titiacademy-web"
 SECRET = os.environ.get("WEBHOOK_SECRET")
+if not SECRET:
+    raise SystemExit("WEBHOOK_SECRET wajib di-set (lihat /root/titiacademy-web/.env.webhook)")
 BRANCH = "main"
 LOG_FILE = "/var/log/titiacademy-webhook.log"
 

@@ -4,3 +4,12 @@ node_modules/
 .env.local
 certbot/
 *.log
+
+# ditambahkan 22 Sep 2026 (rapikan checkout): rahasia & berkas lokal TIDAK boleh publik
+.env.webhook
+__pycache__/
+*.bak*
+*.sebelum-*
+deploy.log
+content-calendar.html
+static/
